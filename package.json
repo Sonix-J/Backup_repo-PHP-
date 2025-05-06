@@ -22,6 +22,7 @@
         "@fontsource/raleway": "^5.2.5",
         "@fontsource/righteous": "^5.2.5",
         "@googlemaps/js-api-loader": "^1.16.8",
-        "alpinejs": "^3.14.9"
+        "alpinejs": "^3.14.9",
+        "lucide": "^0.507.0"
     }
 }

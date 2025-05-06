@@ -152,13 +152,22 @@ class PropertyController extends Controller
     {
         return view('pages.description-highlights');
     }
+//    public function createProperty_step5()
+//    {
+//        $controller = new AmenityController();
+//        $amenities = $controller->getAllAmenities();
+////        $amenities = Amenity::All();
+//        return view('pages.amenities-highlights', compact('amenities'));
+//    }
+
     public function createProperty_step5()
     {
-        $controller = new AmenityController();
-        $amenities = $controller->getAllAmenities();
-//        $amenities = Amenity::All();
+        // Fetch all amenities and group by type (BA, SA, SI)
+        $amenities = Amenity::all()->groupBy('amn_type');
+
         return view('pages.amenities-highlights', compact('amenities'));
     }
+
     public function createProperty_step6()
     {
         return view('pages.pictures-highlights');

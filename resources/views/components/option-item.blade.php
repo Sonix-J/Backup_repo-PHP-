@@ -8,7 +8,8 @@
 >
     <i class="filter-icon"
        data-lucide="{{ $type['icon_name'] }}"
-       x-bind:class="isActive ? 'text-housify-light' : 'text-housify-darkest'"></i>
+       x-bind:class="isActive ? 'text-housify-light' : 'text-housify-darkest'">
+    </i>
     <span class="text-center w-full"
           x-bind:class="isActive ? 'text-housify-light' : 'text-housify-darkest'">
         {{ $type['type_name'] }}
