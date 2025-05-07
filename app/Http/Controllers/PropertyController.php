@@ -134,48 +134,48 @@ class PropertyController extends Controller
 
         return view('pages.property-details', compact('property'));
     }
-
-    public function createProperty_step1()
-    {
-        $types = Type::all();
-        return view('pages.identify-property', compact('types'));
-    }
-
-    public function createProperty_step2()
-    {
-        return view('pages.location-property');
-    }
-    public function createProperty_step3()
-    {
-        return view('pages.capacity-property');
-    }
-    public function createProperty_step4()
-    {
-        return view('pages.description-highlights');
-    }
+//
+//    public function createProperty_step1()
+//    {
+//        $types = Type::all();
+//        return view('pages.identify-property', compact('types'));
+//    }
+//
+//    public function createProperty_step2()
+//    {
+//        return view('pages.location-property');
+//    }
+//    public function createProperty_step3()
+//    {
+//        return view('pages.capacity-property');
+//    }
+//    public function createProperty_step4()
+//    {
+//        return view('pages.description-highlights');
+//    }
+////    public function createProperty_step5()
+////    {
+////        $controller = new AmenityController();
+////        $amenities = $controller->getAllAmenities();
+//////        $amenities = Amenity::All();
+////        return view('pages.amenities-highlights', compact('amenities'));
+////    }
+//
 //    public function createProperty_step5()
 //    {
-//        $controller = new AmenityController();
-//        $amenities = $controller->getAllAmenities();
-////        $amenities = Amenity::All();
+//        // Fetch all amenities and group by type (BA, SA, SI)
+//        $amenities = Amenity::all()->groupBy('amn_type');
+//
 //        return view('pages.amenities-highlights', compact('amenities'));
 //    }
-
-    public function createProperty_step5()
-    {
-        // Fetch all amenities and group by type (BA, SA, SI)
-        $amenities = Amenity::all()->groupBy('amn_type');
-
-        return view('pages.amenities-highlights', compact('amenities'));
-    }
-
-    public function createProperty_step6()
-    {
-        return view('pages.pictures-highlights');
-    }
-
-    public function createProperty_step7()
-    {
-        return view('pages.price-highlights');
-    }
+//
+//    public function createProperty_step6()
+//    {
+//        return view('pages.pictures-highlights');
+//    }
+//
+//    public function createProperty_step7()
+//    {
+//        return view('pages.price-highlights');
+//    }
 }
